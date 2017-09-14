@@ -155,7 +155,11 @@
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="gulpfile.js" />
+    <Content Include="Public\js\dist\main.bundle.min.js" />
     <Content Include="Public\js\main.js" />
+    <Content Include="Public\js\smart.js" />
+    <Content Include="Public\js\src\dump\characters.jsx" />
+    <Content Include="Public\js\src\presentional\select-option.js" />
     <Content Include="Public\js\src\smart\home.jsx" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -169,9 +173,6 @@
       <DependentUpon>Web.config</DependentUpon>
     </Content>
     <Content Include="Views\Web.config" />
-    <Content Include="Views\_ViewStart.cshtml" />
-    <Content Include="Views\Shared\Error.cshtml" />
-    <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
@@ -179,9 +180,6 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
-    <Folder Include="Public\js\dist\" />
-    <Folder Include="Public\js\src\dump\" />
-    <Folder Include="Public\js\src\presentional\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

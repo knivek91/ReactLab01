@@ -12,6 +12,7 @@
   },
   "description": "",
   "devDependencies": {
+    "axios": "^0.16.2",
     "babel-cli": "^6.5.1",
     "babel-eslint": "^6.0.0",
     "babel-preset-es2015": "^6.5.0",

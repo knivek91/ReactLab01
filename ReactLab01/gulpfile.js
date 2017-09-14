@@ -8,11 +8,12 @@ var gulp = require('gulp'),
     source = require('vinyl-source-stream');
 
 const files = [
-    'main.js'
+    'main.js',
+    'smart.js'
 ];
 
 const public = './Public/';
-const rootJS = public + 'js/src/';
+const rootJS = public + 'js/';
 const outputJS = public + 'js/dist/';
 const rootCSS = public + 'css/src/*.css';
 const outputCSS = public + 'css/dist/';
@@ -20,7 +21,6 @@ const outputCSS = public + 'css/dist/';
 gulp.task('dev', () => {
     const tasks = files.map((file) => {
         const filePath = rootJS + file;
-        console.log(filePath);
         return browserify({
             entries: filePath,
             extensions: ['.js', '.jsx'],
@@ -74,11 +74,7 @@ gulp.task('css', function () {
         .pipe(gulp.dest(outputCSS));
 });
 
-//gulp.task('enviroment', () => {
-//    process.env.NODE_ENV = env === 'rbcDev' ? 'development' : 'production'; // for react enviroment
-//});
-
-const watchJS = rootJS + '**/**';
+const watchJS = rootJS + 'src/**/**';
 
 gulp.task('watchDev', () => {
     process.env.NODE_ENV = 'development';
