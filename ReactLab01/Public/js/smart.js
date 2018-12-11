@@ -14,7 +14,7 @@ class Smart extends React.Component {
         };
     }
 
-    componentWillMount() {
+    componentDidMount() {
         axios.get('https://swapi.co/api/people/?page=1')
             .then(({ data }) => {
                 const characters = data.results;
