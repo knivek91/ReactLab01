@@ -25,6 +25,11 @@ class Smart extends React.Component {
 
     render() {
         const { characters } = this.state
+
+        if(error !== '') {
+            return <div>{error}</div>
+        }
+
         return (
             <Character characters={characters} />
         )
